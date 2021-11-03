@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function EliminarTarea() {
   // const [state, setstate] = useState(initialState)
@@ -9,7 +9,7 @@ export default function EliminarTarea() {
       <button className="btn btn-danger"
         onClick={(e) => {
             console.log(e   )
-          if (e.target.innerText == "borrar") {
+          if (e.target.innerText === "borrar") {
             // let lista = e.target.parentElement;
             e.target.parentElement.remove();
           }
